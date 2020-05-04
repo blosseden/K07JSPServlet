@@ -64,6 +64,11 @@
 	dis.forward(request, response); */
 	%>
 	
+	<%--
+	sendRedirect()는 JS의 location.href와 동일한 기능으로 새로운
+	페이지에 대한 요청을 하게된다. 이 경우 request영역은 공유되지 않는다.
+	웹브라우저의 URL주소창에는 새롭게 요청된 페이지의 경로명이 보여지게 된다.
+	 --%>
 	<h3>sendRedirect()를 사용한 페이지 이동</h3>
 	<%
 		response.sendRedirect("RequestResult.jsp?param="+

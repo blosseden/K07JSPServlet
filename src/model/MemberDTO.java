@@ -1,9 +1,11 @@
 package model;
 
 import java.sql.Date;
-
-import jdk.nashorn.internal.codegen.MethodEmitter;
-
+/*
+ DTO객체(Data Transfer Object)
+  : 데이터를 저장하기 위한 객체로 멤버변수, 생성자, getter/setter
+	메소드를 가지고 있는 클라스로 일반적인 자바빈(Been)규약을 따른다
+  */
 public class MemberDTO {
 
 	private String id;
