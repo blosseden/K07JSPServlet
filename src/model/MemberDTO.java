@@ -49,6 +49,10 @@ public class MemberDTO {
 	public void setRegidate(java.sql.Date regidate) {
 		this.regidate = regidate;
 	}
+	@Override
+	public String toString() {
+		return String.format("아이디:%s비밀번호:%s이름:%s",id,pass,name );
+	}
 	
 	
 
