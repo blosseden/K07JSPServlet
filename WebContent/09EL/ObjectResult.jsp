@@ -71,7 +71,7 @@
 	</ul>
 	
 	<%--
-		EL의 param내장객체를 통ㅐㅎ 파라미터를 읽을 때
+		EL의 param내장객체를 통해 파라미터를 읽을 때
 			1. param.폼이름
 			2. param['폼이름']
 			3. param["폼이름"]
@@ -79,6 +79,10 @@
 	 --%>
 	<h4>파라미터로 전달된 값의 합</h4>
 	<ul>
+	<!-- 
+		윗부분은 연산이 되어 500이 출력됨
+		아래는 200 , 300이라는 별도의 값으로 
+	 -->
 		<li>${param.firstNum + param['secondNum'] }</li>
 		<li>${param.firstNum} + ${param['secondNum'] }</li>
 	</ul>
