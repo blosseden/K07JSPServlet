@@ -111,7 +111,7 @@ dao.close();
 			/*
 			컬렉션에 입력된 데이터가 있다면 저장된 BbsDTO의 갯수만큼
 			즉, DB가 반환해준 레코드의 갯수만큼 반복하면서 출력한다.
-			*/
+			*/	
 			for(BbsDTO dto : bbs){
 				//전체 레코드수를 이용하여 하나씩 차감하면서 가상번호 부여
 				vNum = totalRecordCount --;

@@ -44,6 +44,30 @@
   	아래 파일리스트에 기술된 파일을 순서대로 찾아서 실행한다. 
   	만약 해당 파일이 없다면 404(페이지없음) 에러가 발생한다. 
   -->
+    <!-- 10.EL언어
+ 3. web.xml에 <jsp-config> 엘리먼트 추가 후 tld파일의 경로를 등록한다. 
+CopyQualifiedName으로 경로복사
+  -->
+<!-- 
+
+    EL에서 JAVA클래스의 메소드 호출 절차 및 방법
+    1.클래스와 메소드를 정의한다. 단 메소드 정의시 반드시 public static으로 선언해야한다.
+    2.TLD파일을 생성한다. Tag Library Desciptor의 약자로
+      WEB-INF폴더 하위 아무곳이나 생성하면 컨테이너가 찾아서 사용하게 된다.
+      우리는 tlds 폴더를 생성한 후 해당 파일을 작성한다.
+       파일 작성시 fn.tld를 참조한다.
+    3. web.xml에 내가 정의한 태그라이브러리 파일을 설정한다.
+           taglib-uri : JSP의 taglib지시어의 uri속성에 삽입할 값
+           taglib-location : 실제 tld 파일의 위치(경로를 삽입함)
+ -->  
+  <jsp-config>
+   <taglib>
+      <taglib-uri>myTagLibTld</taglib-uri>
+      <taglib-location>/WEB-INF/tlds/MyTagLib.tld</taglib-location>
+     </taglib>
+  </jsp-config>
+ 
+  
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
@@ -53,4 +77,6 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>HelloJSP.jsp</welcome-file>
   </welcome-file-list>
+  
+
 </web-app>
