@@ -88,7 +88,6 @@
 		<li>이름
 		<%=((MemberDTO)request.getAttribute("argsMember")).getName() %>
 		</li>
-		
 	</ul>
 	<!-- EL로 출력시에는 별도의 형변환이 필요없고 속성만이 중복되지
 	않는다면 XXXScope 내장객체를 생략 할 수 도 있다. -->
@@ -173,12 +172,15 @@
 	Map계열의 컬렉션은 Key값을 통해 value에 접근한다. Key 를 통한 접근이
 	index를 통한 접근보다 속도가 빠르다. 
 	 -->
+	 
 	<h2>Map 컬렉션 이용하기</h2>
+	
 	<%
 	Map map = new HashMap();
 	map.put("def", request.getAttribute("defaultMember"));
 	map.put("args", request.getAttribute("argsMember"));
 	%>
+	
 	<h4>1단계 : set태그로 맵 컬렉션 설정</h4>
 	<c:set var="map" value="<%=map %>" scope="request" />
 	
