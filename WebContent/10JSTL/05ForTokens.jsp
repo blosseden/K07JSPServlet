@@ -12,11 +12,11 @@
 	<h2>forTokens 태그</h2>
 	<%
 	/*
-	StringTOkenizer클래스
+	StringTokenizer클래스
 		:문자열을 토큰(구분자)도 나눠서 출력할 때 사용한다.
 		hasMoreTokens() : 꺼내올 토큰이 있으면 true를 반환
 		nextToken() : 해당 토큰을 꺼내온다.
-		countTOkens() : 토큰의 갯수를 반환한다.
+		countTokens() : 토큰의 갯수를 반환한다.
 	*/
 	String colors = "red,green,blue,gray";
 	

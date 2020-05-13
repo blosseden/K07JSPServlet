@@ -61,7 +61,6 @@
 	0 0 0 0 1
 	-->
 	<h4>if문 사용하기</h4>
-	
 	<c:forEach begin="1" end="5" var="i">
 	
 		<c:forEach begin="1" end="5" var="j">
