@@ -1,12 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>CommonLink.jsp</title>
-</head>
-<body>
 	<h2>공통링크</h2>
 	<table border="1" width="90%">
 		<tr>
@@ -25,7 +18,5 @@
 			</td>
 		</tr>
 	</table>
-</body>
-</html>
 
 

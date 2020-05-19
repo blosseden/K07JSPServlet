@@ -39,7 +39,7 @@
  	<%
 	}
  	%>
- 	
+ 	</ul>
  	<%--
  	ServletContext의 메소드인 getRealPath()로 서버의 물리적 경로를
  	얻어올 수 있다. 사융시 context reoot를 제외한 /로 시작하는 절대경로를
@@ -59,7 +59,7 @@
  			<%=config.getServletContext().getRealPath("/images") %></li>
  		<li>this키워드(주로선언부에서사용) :
  			<%=this.getServletContext().getRealPath("/images") %></li>
- 	</ul>
+ 	
 	</ul>
 	
 	<!-- 
